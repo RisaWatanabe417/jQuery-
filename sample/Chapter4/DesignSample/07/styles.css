@@ -1,0 +1,123 @@
+.ajaxTable {
+	position:relative;
+	width:814px;
+	height:397px;
+	margin:0 auto;
+	line-height:1.2;
+}
+
+	/* 後ろに敷く背景用要素 */
+	
+	.ajaxTable-bg1,
+	.ajaxTable-bg2,
+	.ajaxTable-bg3,
+	.ajaxTable-bg4 {
+		position:absolute;
+		width:196px;
+		height:100%;
+		border-radius:3px;
+		overflow:hidden;
+		background:#fff;
+		box-shadow:0 1px 1px rgba(0,0,0,.2);
+	}
+	.ajaxTable-bg1 { left:0; }
+	.ajaxTable-bg2 { left:206px; }
+	.ajaxTable-bg3 { left:412px; }
+	.ajaxTable-bg4 { left:618px; }
+	
+		.ajaxTable-bg1 div,
+		.ajaxTable-bg2 div,
+		.ajaxTable-bg3 div,
+		.ajaxTable-bg4 div {
+			position:absolute;
+			left:0;
+			top:0;
+			width:100%;
+			height:62px;
+		}
+		
+			.ajaxTable-bg1 span,
+			.ajaxTable-bg2 span,
+			.ajaxTable-bg3 span,
+			.ajaxTable-bg4 span {
+				position:absolute;
+				left:0;
+				bottom:0;
+				width:100%;
+				height:4px;
+				line-height:0;
+				font-size:0;
+			}
+			
+		.ajaxTable-bg1 div { background:#E34E56; }
+		.ajaxTable-bg2 div { background:#F0C05F; }
+		.ajaxTable-bg3 div { background:#43B6CC; }
+		.ajaxTable-bg4 div { background:#6CC8ED; }
+		
+		.ajaxTable-bg1 span { background:#D8333E; }
+		.ajaxTable-bg2 span { background:#E8A94A; }
+		.ajaxTable-bg3 span { background:#37A4BF; }
+		.ajaxTable-bg4 span { background:#56B7E8; }
+	
+	/* メインの表 */
+		
+	.ajaxTable table {
+		position:absolute;
+		left:-10px;
+		top:-10px;
+		width:834px;
+	}
+		.ajaxTable th,
+		.ajaxTable td {
+			width:196px;
+			padding:0;
+		}
+		.ajaxTable th {
+			height:68px;
+			color:#fff;
+		}
+		
+		.ajaxTable td {
+			color:#595F6A;
+		}
+		.ajaxTable-priceTr td { height:60px; }
+		.ajaxTable-projectsTr td { height:47px; }
+		.ajaxTable-usersTr td { height:47px; }
+		.ajaxTable-storageTr td { height:47px; }
+		.ajaxTable-submitTr td { height:60px; }
+		
+		/* td内のテキスト */
+		
+		.ajaxTable em {
+			font-style:normal;
+			font-size:20px;
+		}
+		.ajaxTable strong {
+			font-size:40px;
+			padding:0 4px;
+		}
+		.ajaxTable-mainText {
+			font-weight:bold;
+		}
+		.ajaxTable-subText {
+			font-size:11px;
+			color:#B3B3B3;
+		}
+		
+		/* Startボタン*/
+		
+		.ajaxTable-submit {
+			font-size:16px;
+			line-height:1.4;
+			background:#595F6A;
+			display:block;
+			margin:0 auto;
+			width:132px;
+			padding:10px 0;
+			border-radius:3px;
+			color:#fff;
+			text-decoration:none;
+		}
+		.ajaxTable-submit:hover {
+			background:#3C414C;
+		}

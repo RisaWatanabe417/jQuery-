@@ -1,0 +1,26 @@
+.navs{
+	list-style-type:none;
+	padding:0;
+	width:352px;
+	margin:0 auto;
+}
+	.navs *{
+		float:left;
+	}
+	.navs li{
+		padding:2px 1px 0;
+		margin:0;
+	}
+
+.balloon{
+	background:#31374c;
+	color:#fff;
+	padding:6px 8px;
+	position:absolute;
+	display:none;
+	border-radius:3px;
+	box-shadow:0 2px 3px rgba(0,0,0,.2);
+	z-index:5;
+	font-size:12px;
+	line-height:1;
+}

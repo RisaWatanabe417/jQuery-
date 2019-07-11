@@ -1,0 +1,90 @@
+.ajaxTable {
+	width:810px;
+	margin:0 auto;
+	border-radius:6px;
+	overflow:hidden;
+	box-shadow:0 2px 3px rgba(0,0,0,.2);
+}
+	.ajaxTable table {
+		border-spacing:0;
+		border-collapse:collapse;
+		width:100%;
+		line-height:1.4;
+	}
+	.ajaxTable th {
+		padding:10px 0 10px;
+		font-size:14px;
+		background:#399C97 url(imgs/bg.png) 0 100% repeat-x;
+		color:#fff;
+		white-space:nowrap;
+	}
+	.ajaxTable td {
+		border-top:1px dotted #E6E6E6;
+		padding:10px 0 10px;
+		color:#808080;
+		font-size:15px;
+	}
+	
+	/* thead列ごとの指定 */
+	
+	.ajaxTable th.ajaxTable-th-no {
+		width:1px;
+		padding-right:30px;
+		padding-left:30px;
+		text-align:center;
+	}
+	.ajaxTable th.ajaxTable-th-username,
+	.ajaxTable th.ajaxTable-th-email {
+		text-align:left;
+		padding-right:30px;
+	}
+	.ajaxTable th.ajaxTable-th-id {
+		text-align:left;
+		width:1px;
+		padding-right:30px;
+	}
+	.ajaxTable th.ajaxTable-th-lang {
+		text-align:left;
+		width:1px;
+		padding-right:30px;
+	}
+	.ajaxTable th.ajaxTable-th-date {
+		text-align:left;
+		width:1px;
+		padding-right:30px
+	}
+	
+	/* tbody列ごとの指定 */
+	
+	.ajaxTable td.ajaxTable-td-no {
+		text-align:center;
+	}
+	.ajaxTable td.ajaxTable-td-username {
+		text-align:left;
+		padding-right:30px;
+	}
+	.ajaxTable td.ajaxTable-td-email {
+		text-align:left;
+		padding-right:30px;
+	}
+	.ajaxTable td.ajaxTable-td-id {
+		text-align:left;
+		padding-right:30px;
+	}
+	.ajaxTable td.ajaxTable-td-lang {
+		text-align:left;
+		padding-right:30px;
+	}
+	.ajaxTable td.ajaxTable-td-date {
+		text-align:left;
+		padding-right:32px;
+	}
+	
+	/* 奇数、偶数セル配色 */
+	
+	.ajaxTable .ajaxTable-tr-odd td {
+		background:#FFFFFF;
+	}
+	.ajaxTable .ajaxTable-tr-even td {
+		background:#F8F8F8;
+	}

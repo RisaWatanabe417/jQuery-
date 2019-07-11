@@ -1,0 +1,170 @@
+.tabSet{
+	width:800px;
+	margin:0 auto;
+  background:#ead2b2 url(imgs/wood.png);
+	box-shadow:0 1px 2px rgba(0,0,0,.3);
+	color:#31374a;
+	font-size:14px;
+	line-height:1.5;
+	border-radius:6px;
+}
+.tabSet,
+.tabSet input,
+.tabSet textarea{
+	font-family:Helvetica, Arial, sans-serif;
+}
+	.tabSet .tabs{
+		margin:0;
+		padding:20px 0 0 18px;
+		height:34px;
+		list-style-type:none;
+	}
+		.tabSet .tab{
+			float:left;
+			width:187px;
+			padding:0 2px;
+			margin:0;
+			font-size:15px;
+			line-height:40px;
+			letter-spacing:1px;
+		}
+			.tabSet .tab a{
+				color:#595f6a;
+				background:#fff;
+				background:rgba(255,255,255,.25);
+				display:block;
+				text-decoration:none;
+				border-radius:3px;
+				font-weight:bold;
+			}
+			.tabSet .tab a:hover{
+				text-decoration:underline;
+			}
+			
+			/* ハイライトされた時 */
+			.tabSet .tabs a.on{
+				color:#fff;
+				background:#31374a;
+				cursor:default;
+			}
+			.tabSet .tabs a.on:hover{
+				text-decoration:none;
+			}
+			
+	.tabSet .panel{
+		min-height:370px;
+		_height:370px; /* IE6 min-height */
+		text-shadow:0 1px 0 rgba(255,255,255,.8);
+	}
+
+.photoBlock{
+	text-align:left;
+	width:160px;
+}
+	.photoBlock .photo{
+		height:107px;
+		padding:0 0 25px;
+	}
+		.photoBlock .photo img{
+			vertical-align:top;
+		}
+	.photoBlock .heading{
+		font-weight:bold;
+		padding:0 0 10px;
+	}
+	.photoBlock p{
+		padding:0;
+		margin:0;
+		font-size:11px;
+	}
+
+.photoBlockContainer{
+	overflow:hidden;
+	margin:0 auto;
+	padding:50px 0 0;
+	width:760px;
+}
+	.photoBlockPlacer{
+		float:left;
+		padding:0 15px;
+	}
+
+.userList{
+	margin:0 100px;
+	padding:50px 0 0;
+}
+	.userList table{
+		border-collapse:collapse;
+		width:100%;
+	}
+	.userList th,
+	.userList td{
+		text-align:left;
+		vertical-align:middle;
+	}
+	.userList td.img{
+		width:1px;
+		padding:10px 20px 10px 0;
+	}
+		.userList td.img img{
+			display:block;
+		}
+	.userList td.name{
+		padding:10px 20px 10px 0;
+		font-weight:bold;
+	}
+	.userList td.email{
+		padding:10px 20px 10px 0;
+	}
+	.userList td.date{
+		width:1px;
+		padding:10px 0;
+	}
+		.userList td.date span{
+			white-space:nowrap;
+		}
+
+.formSet{
+	text-align:left;
+	padding:50px 0 0 100px;
+}
+	.formSet table{
+		border-collapse:collapse;
+	}
+	.formSet th,
+	.formSet td{
+		text-align:left;
+		vertical-align:top;
+	}
+	.formSet th{
+		white-space:nowrap;
+		padding:11px 0 0;
+	}
+	.formSet td{
+		padding:0 0 10px;
+	}
+	.formSet textarea,
+	.formSet input{
+		border:1px solid #cccccc;
+		background:#f8f8f8;
+		box-sizing:border-box;
+		font-size:1em;
+		vertical-align:top;
+		margin:0;
+	}
+	.formSet textarea{
+		resize:vertical;
+	}
+	.formSet .inputElement1{
+		width:372px;
+		padding:12px 8px;
+	}
+	.formSet .inputElement2{
+		width:365px;
+		padding:12px 8px;
+	}
+	.formSet .inputElement3{
+		width:522px;
+		height:137px;
+		padding:10px 8px;
+	}

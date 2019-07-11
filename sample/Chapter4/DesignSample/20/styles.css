@@ -1,0 +1,99 @@
+html,body{
+	margin:0;
+	padding:0;
+}
+body{
+	font-size:14px;
+	line-height:1.4;
+	font-family:Helvetica, Arial, sans-serif;
+	color:#999;
+}
+
+.header{
+	position:relative;
+	text-align:center;
+	color:#fff;
+	background:#399c97;
+	line-height:42px;
+	padding:2px 0 0;
+}
+	.header a{
+		position:absolute;
+		left:15px;
+		top:50%;
+		margin:-10px 0 0;
+	}
+	.header a img{
+		display:block;
+	}
+	.header h1{
+		padding:0;
+		margin:0;
+		font-size:1em;
+	}
+
+.bodyArea{
+	overflow:hidden;
+}
+	.bodyAreaInner{
+		width:280px;
+		margin:0 auto;
+	}
+
+.photos{
+	width:320px;
+	height:213px;
+	position:relative;
+	margin:0 -20px 25px;
+}
+	.photos .inner{
+		width:1640px;
+		height:213px;
+		position:absolute;
+		left:0;
+		top:0;
+	}
+	.photos .item{
+		width:320px;
+		margin:0 0 0 10px;
+		float:left;
+	}
+	.photos .firstItem{
+		margin-left:0;
+	}
+	.photos .item img{
+		float:left;
+	}
+
+.dotContainer{
+	position:absolute;
+	left:0;
+	right:0;
+	bottom:0;
+	text-align:center;
+	line-height:1px;
+	padding:0 0 10px;
+}
+	.dotContainer span{
+		display:inline-block;
+		width:8px;
+		height:8px;
+		background:#fff;
+		vertical-align:top;
+		border-radius:4px;
+		margin:0 2px;
+	}
+	.dotContainer span.current{
+		background:#3e9c96;
+	}
+
+h2{
+	font-size:1em;
+	color:#3e9c96;
+	padding:0 0 20px;
+	margin:0;
+}
+p{
+	padding:0 0 20px;
+	margin:0;
+}

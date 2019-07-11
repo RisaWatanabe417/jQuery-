@@ -1,0 +1,33 @@
+body{
+	padding:60px;
+	background-color:#f4f4f4;
+	font-family:Arial, Helvetica, sans-serif;
+}
+h1{
+	font-size:20px;
+	color:#31374c;
+	width:666px;
+	margin:0 auto 20px;
+}
+table{
+	width:666px;
+	margin:auto;
+	border-collapse:collapse;
+	background:#999;
+}
+td,th{
+	border:1px solid #f4f4f4;
+}
+thead th{
+	background-color:#31374c;
+	color:#fff;
+	font-size:14px;
+	padding:.4em .75em;
+	text-align:left;
+}
+td {
+	font-size:16px;
+	color:#666;
+	padding:.75em;
+	background-color:#fff;
+}

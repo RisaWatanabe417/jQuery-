@@ -1,0 +1,75 @@
+.accordion {
+	width:610px;
+	padding:12px 15px 15px;
+	margin:0 auto;
+	text-align:left;
+	font-size:13px;
+	line-height:1.4;
+	letter-spacing:.05em;
+	color:#31374A;
+	background:#E8D3B4 url(imgs/wood.png);
+	box-shadow:0 2px 3px rgba(0,0,0,.2);
+	border-radius:6px;
+	overflow:hidden;
+}
+	.accordion dt {
+		font-weight:bold;
+		font-size:18px;
+		padding:6px 18px 6px 12px;
+		margin:3px 0 0;
+		cursor:default;
+		background-color:rgba(255,255,255,.3);
+		border-radius:6px 6px 0 0;
+	}
+		.accordion dt div {
+			background-repeat:no-repeat;
+			background-position:0 50%;
+		}
+		.accordion dt span {
+			display:block;
+			background:url(imgs/arrow_down.png) 100% 50% no-repeat;
+			padding:10px 25px 10px 54px;
+			min-height:20px;
+		}
+	.accordion dt.closed {
+		cursor:pointer;
+		background-color:transparent;
+		border-radius:6px;
+	}
+		.accordion dt.closed span {
+			background-image:url(imgs/arrow_up.png);
+		}
+	.accordion dt:hover {
+		background-color:rgba(255,255,255,.3);
+	}
+	
+	/* アイコンバリエーション */
+	
+	.accordion dt.name1 div { background-image:url(imgs/icon1.png); }
+	.accordion dt.name2 div { background-image:url(imgs/icon2.png); }
+	.accordion dt.name3 div { background-image:url(imgs/icon3.png); }
+	.accordion dt.name4 div { background-image:url(imgs/icon4.png); }
+	.accordion dt.name5 div { background-image:url(imgs/icon5.png); }
+	
+	.accordion dd {
+		background-color:rgba(255,255,255,.3);
+		padding:0 18px 18px 66px;
+		margin:0;
+		font-size:14px;
+		border-radius:0 0 6px 6px;
+	}
+	.accordion dd.closed {
+		display:none;
+	}
+		.accordion dd .detail {
+			overflow:hidden;
+		}
+			.accordion dd .label {
+				float:left;
+				white-space:nowrap;
+				padding:0 20px 0 0;
+			}
+			.accordion dd .text {
+				overflow:hidden;
+				*zoom:1; /* ie */
+			}

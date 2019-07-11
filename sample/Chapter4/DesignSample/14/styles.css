@@ -1,0 +1,184 @@
+.tabSet{
+	width:870px;
+	margin:0 auto;
+	color:#808080;
+	font-size:14px;
+	line-height:1.5;
+	position:relative;
+}
+.tabSet,
+.tabSet input,
+.tabSet textarea{
+	font-family:Helvetica, Arial, sans-serif;
+}
+	.tabSet .tabs{
+		margin:0;
+		padding:0;
+		width:160px;
+		position:absolute;
+		left:0;
+		top:0;
+		list-style-type:none;
+		text-align:left;
+	}
+		.tabSet .tab{
+			padding:0 0 10px;
+			margin:0;
+			font-size:15px;
+			letter-spacing:1px;
+		}
+			.tabSet .tab a{
+				display:block;
+				color:#ccc;
+				text-decoration:none;
+				background:#eaeaea url(imgs/icon1_off.png) 15px 50% no-repeat;
+				padding:10px 0 10px 42px;
+				border-radius:6px 0 0 6px;
+			}
+			.tabSet .tab a:hover{
+				text-decoration:underline;
+			}
+			
+			/* ハイライトされた時 */
+			
+			.tabSet .tabs a.on{
+				color:#808080;
+				background-color:#fff;
+				cursor:default;
+			}
+			.tabSet .tabs a.on:hover{
+				text-decoration:none;
+			}
+			
+			/* アイコンのバリエーション */
+			
+			.tabSet .tab1 a{ background-image:url(imgs/icon1_off.png); }
+			.tabSet .tab1 a.on{ background-image:url(imgs/icon1_on.png); }
+			.tabSet .tab2 a{ background-image:url(imgs/icon2_off.png); }
+			.tabSet .tab2 a.on{ background-image:url(imgs/icon2_on.png); }
+			.tabSet .tab3 a{ background-image:url(imgs/icon3_off.png); }
+			.tabSet .tab3 a.on{ background-image:url(imgs/icon3_on.png); }
+			.tabSet .tab4 a{ background-image:url(imgs/icon4_off.png); }
+			.tabSet .tab4 a.on{ background-image:url(imgs/icon4_on.png); }
+			
+			
+	.tabSet .panels {
+		margin:0 0 0 160px;
+		background:#fff;
+	}
+		.tabSet .panel{
+			min-height:360px;
+			_height:360px; /* IE6 min-height */
+		}
+
+.photoBlock{
+	text-align:left;
+	width:140px;
+}
+	.photoBlock .photo{
+		height:94px;
+		padding:0 0 15px;
+	}
+		.photoBlock .photo img{
+			vertical-align:top;
+		}
+	.photoBlock .heading{
+		font-weight:bold;
+		padding:0 0 10px;
+	}
+	.photoBlock p{
+		padding:0;
+		margin:0;
+		font-size:11px;
+	}
+
+.photoBlockContainer{
+	overflow:hidden;
+	margin:0 auto;
+	padding:50px 0 0;
+	width:640px;
+}
+	.photoBlockPlacer{
+		float:left;
+		padding:0 10px;
+	}
+
+.userList{
+	margin:0 100px;
+	padding:50px 0 0;
+}
+	.userList table{
+		border-collapse:collapse;
+		width:100%;
+	}
+	.userList th,
+	.userList td{
+		text-align:left;
+		vertical-align:middle;
+	}
+	.userList td.img{
+		width:1px;
+		padding:10px 20px 10px 0;
+	}
+		.userList td.img img{
+			display:block;
+		}
+	.userList td.name{
+		padding:10px 20px 10px 0;
+		font-weight:bold;
+	}
+	.userList td.email{
+		padding:10px 20px 10px 0;
+	}
+	.userList td.date{
+		width:1px;
+		padding:10px 0;
+	}
+		.userList td.date span{
+			white-space:nowrap;
+		}
+
+.formSet{
+	text-align:left;
+	padding:50px 0 0 40px;
+}
+	.formSet table{
+		border-collapse:collapse;
+	}
+	.formSet th,
+	.formSet td{
+		text-align:left;
+		vertical-align:top;
+	}
+	.formSet th{
+		white-space:nowrap;
+		padding:11px 0 0;
+	}
+	.formSet td{
+		padding:0 0 10px;
+	}
+	.formSet textarea,
+	.formSet input{
+		border:1px solid #cccccc;
+		background:#f8f8f8;
+		box-sizing:border-box;
+		font-size:1em;
+		vertical-align:top;
+		margin:0;
+	}
+	.formSet textarea{
+		resize:vertical;
+	}
+	.formSet .inputElement1{
+		width:372px;
+		padding:10px 8px;
+	}
+	.formSet .inputElement2{
+		width:365px;
+		padding:10px 8px;
+	}
+	.formSet .inputElement3{
+		width:522px;
+		height:137px;
+		padding:8px 8px;
+	}

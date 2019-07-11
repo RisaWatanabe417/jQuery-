@@ -1,0 +1,34 @@
+[
+	{
+		"course": "Free",
+		"price": "0",
+		"projects": "1",
+		"users": "1",
+		"storage": "500MB",
+		"url": "http://example.com?course=free"
+	},
+	{
+		"course": "Standard",
+		"price": "10",
+		"projects": "10",
+		"users": "5",
+		"storage": "200MB",
+		"url": "http://example.com?course=standard"
+	},
+	{
+		"course": "Professional",
+		"price": "20",
+		"projects": "50",
+		"users": "30",
+		"storage": "50GB",
+		"url": "http://example.com?course=professional"
+	},
+	{
+		"course": "Enterprise",
+		"price": "50",
+		"projects": "Unlimited",
+		"users": "Unlimited",
+		"storage": "100GB",
+		"url": "http://example.com?course=enterprise"
+	}
+]

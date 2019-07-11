@@ -1,0 +1,113 @@
+.ajaxTable {
+	position:relative;
+	width:692px;
+	margin:0 auto;
+	line-height:1.4;
+	text-align:left;
+	color:#31374A;
+}
+	.ajaxTable-bg1 {
+		background:pink;
+		height:100px;
+		margin:0 5px;
+		border-radius:6px;
+		background:#E9D5B7 url(imgs/wood.png) 0 0 repeat;
+		box-shadow:0 1px 1px rgba(0,0,0,.3);
+		z-index:1;
+	}
+	.ajaxTable-bg2 {
+		background:orange;
+		position:absolute;
+		left:0;
+		right:0;
+		top:85px;
+		bottom:0;
+		z-index:2;
+		border-radius:6px;
+		background:#E9D5B7 url(imgs/wood.png) 0 0 repeat;
+		box-shadow:0 1px 3px rgba(0,0,0,.3);
+	}
+	.ajaxTable-main {
+		position:relative;
+		z-index:3;
+		margin:-100px 0 0;
+		padding:0 30px 10px;
+	}
+		.ajaxTable-main h1 {
+			padding:0;
+			margin:0;
+			font-size:28px;
+			height:46px;
+			line-height:46px;
+			padding:8px 0 0;
+		}
+		.ajaxTable-main table {
+			border-collapse:collapse;
+			width:100%;
+		}
+		.ajaxTable-main th,
+		.ajaxTable-main td {
+			padding:0;
+			text-align:left;
+		}
+		
+		.ajaxTable-main th {
+			white-space:nowrap;
+			font-size:12px;
+			text-shadow:0 1px 0 rgba(255,255,255,.8);
+			font-weight:normal;
+			height:30px;
+			padding:0 0 15px;
+		}
+		.ajaxTable-main td {
+			font-size:15px;
+		}
+		
+		/* thの設定 */
+		
+		.ajaxTable-main th.ajaxTable-th-img {
+			width:1px;
+		}
+		.ajaxTable-main th.ajaxTable-th-title {
+			padding-right:10px;
+		}
+		.ajaxTable-main th.ajaxTable-th-author {
+			padding-right:10px;
+		}
+		.ajaxTable-main th.ajaxTable-th-price {
+			width:1px;
+			padding-right:10px;
+		}
+		.ajaxTable-main th.ajaxTable-th-date {
+			width:1px;
+			padding-right:10px;
+		}
+		.ajaxTable-main th.ajaxTable-th-id {
+			width:1px;
+			padding-right:10px;
+		}
+		
+		/* tdの設定 */
+		
+		.ajaxTable-main td.ajaxTable-td-img {
+			padding:5px 15px 5px 0;
+		}
+		.ajaxTable-main td.ajaxTable-td-title {
+			padding:5px 30px 5px 0;
+			font-weight:bold;
+		}
+		.ajaxTable-main td.ajaxTable-td-author {
+			padding:5px 30px 5px 0;
+			font-weight:bold;
+		}
+		.ajaxTable-main td.ajaxTable-td-price {
+			padding:5px 30px 5px 0;
+			white-space:nowrap;
+		}
+		.ajaxTable-main td.ajaxTable-td-date {
+			padding:5px 30px 5px 0;
+			white-space:nowrap;
+		}
+		.ajaxTable-main td.ajaxTable-td-id {
+			white-space:nowrap;
+		}

@@ -1,0 +1,12 @@
+p {
+	margin:0;
+	padding:0 10px 6px;
+}
+li {
+	border-radius:4px;
+	padding:6px 10px 5px;
+	margin:0 0 2px;
+}
+strong {
+	padding:0 3px;
+}

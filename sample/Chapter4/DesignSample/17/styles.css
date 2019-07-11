@@ -1,0 +1,64 @@
+.musicController{
+	width:570px;
+	height:36px;
+	margin:0 auto;
+	position:relative;
+	background:url(imgs/bg.png) 0 50% repeat-x;
+	border-radius:6px;
+	box-shadow:0 2px 3px rgba(0,0,0,.2);
+	color:#339c98;
+}
+	.musicController span{
+		position:absolute;
+	}
+	.musicController span.time{
+		line-height:36px;
+		left:40px;
+		font-size:12px;
+	}
+	.musicController span.icon{
+		width:20px;
+		height:20px;
+		top:8px;
+		cursor:pointer;
+	}
+	.musicController span.icon:hover{
+		opacity:.7;
+	}
+	.musicController span.volume{
+		left:10px;
+		background:url(imgs/volume.png);
+	}
+	.musicController span.prev{
+		left:245px;
+		background:url(imgs/prev.png);
+	}
+	.musicController span.play{
+		left:275px;
+		background:url(imgs/play.png);
+	}
+	.musicController span.next{
+		left:305px;
+		background:url(imgs/next.png);
+	}
+	.musicController span.full{
+		right:40px;
+		background:url(imgs/full.png);
+	}
+	.musicController span.settings{
+		right:10px;
+		background:url(imgs/settings.png);
+	}
+
+.balloon{
+	background:#339c98;
+	color:#fff;
+	padding:6px 8px;
+	position:absolute;
+	display:none;
+	border-radius:3px;
+	box-shadow:0 2px 3px rgba(0,0,0,.2);
+	z-index:5;
+	font-size:12px;
+	line-height:1;
+}

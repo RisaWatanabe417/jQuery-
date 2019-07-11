@@ -1,0 +1,30 @@
+.slideshowHead {
+	width:800px;
+	height:6px;
+	margin:0 auto;
+}
+	.slideshowHead div {
+		width:25%;
+		height:100%;
+		float:left;
+		font-size:0;
+	}
+	.slideshowHead div.slideshowHead-bg1 { background:#E34E56; }
+	.slideshowHead div.slideshowHead-bg2 { background:#F0C05F; }
+	.slideshowHead div.slideshowHead-bg3 { background:#43B6CC; }
+	.slideshowHead div.slideshowHead-bg4 { background:#6CC8ED; }
+	
+.slideshow {
+	width:800px;
+	height:366px;
+	margin:0 auto;
+	position:relative;
+}
+	.slideshow img {
+		position:absolute;
+		top:0;
+		left:0;
+	}
+	.slideshow img.alt {
+		display:none;
+	}

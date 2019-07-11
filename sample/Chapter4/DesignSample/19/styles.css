@@ -1,0 +1,157 @@
+html,body {
+	margin:0;
+	padding:0;
+}
+body {
+	font-size:14px;
+	line-height:1.4;
+	font-family:Helvetica, Arial, sans-serif;
+	color:#999;
+}
+
+.headArea{
+	background:#31374a;
+	padding:16px 0 0;
+	text-align:center;
+}
+
+.tabContainer{
+}
+	.tabContainer a{
+		display:inline-block;
+		vertical-align:top;
+		width:80px;
+	}
+		.tabContainer img{
+			display:block;
+			width:60px;
+			height:60px;
+			margin:0 auto;
+		}
+
+.tabIndicator{
+	text-align:center;
+	margin:8px 0 0;
+}
+	.tabIndicator .inner{
+		position:relative;
+		width:320px;
+		height:8px;
+		margin:0 auto;
+	}
+		.tabIndicator .pointer{
+			position:absolute;
+			bottom:0;
+			top:0;
+			width:80px;
+			height:8px;
+			-webkit-transition:left .25s;
+			transition:left .25s;
+		}
+		.tabIndicator .pointer img{
+			width:12px;
+			height:8px;
+			display:block;
+			margin:0 auto;
+		}
+
+.bodyArea{
+	padding:30px 20px 0;
+	width:280px;
+	margin:0 auto;
+}
+	.bodyAreaInner{
+		margin:0 auto;
+	}
+
+
+.tabContent .contentHeading {
+	font-size:1em;
+	padding:0 0 20px;
+	margin:0;
+	text-transform:uppercase;
+}
+.tabContent .contentHeading-type1 { color:#e34e56; }
+.tabContent .contentHeading-type2 { color:#f0c05f; }
+.tabContent .contentHeading-type3 { color:#43b6cc; }
+.tabContent .contentHeading-type4 { color:#6cc8ed; }
+
+.tabContent p {
+	padding:0;
+	margin:0 0 20px;
+}
+
+.tabContent .photoBlock {
+	display:block;
+	margin:0 auto 20px;
+}
+
+.tabContent .photoBlockDouble {
+	display:block;
+	margin:0 0 20px -20px;
+	overflow:hidden;
+}
+	.tabContent .photoBlockDouble .block{
+		width:130px;
+		padding:0 0 0 20px;
+		float:left;
+	}
+	.tabContent .photoBlockDouble .block img{
+		display:block;
+		margin:0 auto;
+	}
+	.tabContent .photoBlockDouble .block p{
+		padding:10px 0 0;
+		margin:0;
+		font-size:.9em;
+	}
+	
+.tabContent .FAQ{
+	border-collapse:collapse;
+}
+	.tabContent .FAQ th,
+	.tabContent .FAQ td{
+		text-align:left;
+		vertical-align:top;
+		padding:0;
+		margin:0;
+	}
+	.tabContent .FAQ th{
+		white-space:nowrap;
+		padding:0 15px 0 0;
+	}
+		.tabContent .FAQ th span{
+			display: block;
+			width:40px;
+			padding:2px 0 0;
+			line-height:38px;
+			color:#fff;
+			border-radius:20px;
+			text-align:center;
+		}
+		.tabContent .FAQ th span.Q{
+			background:#a6a6a6;
+		}
+		.tabContent .FAQ th span.A{
+			background:#43b6cc;
+		}
+
+.tabContent .formSet{
+}
+	.tabContent .formSet .item{
+		padding:0 0 20px;
+	}
+		.tabContent .formSet .item label{
+			display:block;
+		}
+		.tabContent .formSet .item .title{
+			display:block;
+			padding:0 0 3px;
+		}
+		.tabContent .formSet .item input{
+			display:block;
+			width:100%;
+			padding-top:5px;
+			padding-bottom:5px;
+			box-sizing:border-box;
+		}

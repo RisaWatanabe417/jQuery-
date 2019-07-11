@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Tooltip demo 01 | jQuery book demos</title>
+
+<!-- フレーム用CSS -->
+<link rel="stylesheet" type="text/css" href="../shared/frames.css" />
+<!-- このページで使うCSS -->
+<link rel="stylesheet" type="text/css" href="styles.css" />
+
+<!-- jQuery -->
+<script src="../shared/jquery-1.11.1.min.js"></script>
+<!-- このページで使うJavaScript -->
+<script src="scripts.js"></script>
+
+</head>
+<body>
+	<div class="frame-header">
+		<img class="frame-header-logo" src="../shared/logo.png" width="24" height="24" alt="">
+		<span class="frame-header-title">Demos</span>
+		<span class="frame-header-description">- Introductory Book for jQuery</span>
+	</div>
+	<div class="frame-nav">
+		<div class="frame-nav-uiSelector">
+			<a class="frame-nav-uiSelector-current" href="../16/index.html">06. Tooltip<img class="frame-header-logo" src="../shared/down.png" width="13" height="9" alt=""></a>
+			<ul>
+				<li><a href="../01/index.html">01. Rollover</a></li>
+				
+				<li><a href="../04/index.html">02. Accordion</a></li>
+				<li><a href="../07/index.html">03. Ajax table</a></li>
+				<li><a href="../10/index.html">04. Slideshow</a></li>
+				<li><a href="../13/index.html">05. Tab</a></li>
+				<li><a href="../16/index.html">06. Tooltip</a></li>
+				<li><a href="../19/index.html">07. Touch</a></li>
+			</ul>
+		</div>
+		<ul class="frame-nav-pageSelector">
+			<li><span><span>Demo 01</span></span></li>
+			<li><a href="../17/index.html"><span>Demo 02</span></a></li>
+			<li><a href="../18/index.html"><span>Demo 03</span></a></li>
+		</ul>
+	</div>
+	<div class="frame-uiLabel"><div class="frame-uiLabel-inner">
+		<div class="frame-uiLabel-text1">Demo</div>
+		<div class="frame-uiLabel-text2">01</div>
+	</div></div>
+	<div class="frame-uiBoard"><div class="frame-uiBoard-inner"><div class="frame-uiBoard-inner2">
+		<!-- デモ開始 -->
+		
+		<div class="downloadsBlock">
+			<h1>Reports &amp; Downloads</h1>
+			<div class="main">
+			
+				<ul class="list">
+					<li class="item1"><a href="http://example.com" class="tipOpener tipOpener1" data-balloon-type="balloon1" data-balloon-title="Product sales 1" data-balloon-date="2014-04-01" data-balloon-size="3.5MB">Report File 01-01</a></li>
+					<li class="item1"><a href="http://example.com" class="tipOpener tipOpener1" data-balloon-type="balloon1" data-balloon-title="Product sales 2" data-balloon-date="2013-05-02" data-balloon-size="1.6MB">Report File 01-02</a></li>
+					<li class="item1"><a href="http://example.com" class="tipOpener tipOpener1" data-balloon-type="balloon1" data-balloon-title="Product sales 3" data-balloon-date="2014-06-10" data-balloon-size="12.5MB">Report File 01-03</a></li>
+					<li class="item1"><a href="http://example.com" class="tipOpener tipOpener1" data-balloon-type="balloon1" data-balloon-title="Product sales 4" data-balloon-date="2012-07-04" data-balloon-size="2.4MB">Report File 01-04</a></li>
+					<li class="item1"><a href="http://example.com" class="tipOpener tipOpener1" data-balloon-type="balloon1" data-balloon-title="Product sales 5" data-balloon-date="2014-08-04" data-balloon-size="5.5MB">Report File 01-05</a></li>
+					<li class="item1"><a href="http://example.com" class="tipOpener tipOpener1" data-balloon-type="balloon1" data-balloon-title="Product sales 6" data-balloon-date="2011-09-23" data-balloon-size="120.2MB">Report File 01-06</a></li>
+					<li class="item1"><a href="http://example.com" class="tipOpener tipOpener1" data-balloon-type="balloon1" data-balloon-title="Product sales 7" data-balloon-date="1982-10-30" data-balloon-size="100.4MB">Report File 01-07</a></li>
+				</ul>
+				
+				<ul class="list">
+					<li class="item2"><a href="http://example.com" class="tipOpener tipOpener2" data-balloon-type="balloon2" data-balloon-title="Customer info 1" data-balloon-date="2014-04-01" data-balloon-size="3.5MB">Report File 02-01</a></li>
+					<li class="item2"><a href="http://example.com" class="tipOpener tipOpener2" data-balloon-type="balloon2" data-balloon-title="Customer info 2" data-balloon-date="2013-05-02" data-balloon-size="1.6MB">Report File 02-02</a></li>
+					<li class="item2"><a href="http://example.com" class="tipOpener tipOpener2" data-balloon-type="balloon2" data-balloon-title="Customer info 3" data-balloon-date="2014-06-10" data-balloon-size="12.5MB">Report File 02-03</a></li>
+					<li class="item2"><a href="http://example.com" class="tipOpener tipOpener2" data-balloon-type="balloon2" data-balloon-title="Customer info 4" data-balloon-date="2012-07-04" data-balloon-size="2.4MB">Report File 02-04</a></li>
+					<li class="item2"><a href="http://example.com" class="tipOpener tipOpener2" data-balloon-type="balloon2" data-balloon-title="Customer info 5" data-balloon-date="2014-08-04" data-balloon-size="5.5MB">Report File 02-05</a></li>
+					<li class="item2"><a href="http://example.com" class="tipOpener tipOpener2" data-balloon-type="balloon2" data-balloon-title="Customer info 6" data-balloon-date="2011-09-23" data-balloon-size="120.2MB">Report File 02-06</a></li>
+				</ul>
+				
+				<ul class="list">
+					<li class="item3"><a href="http://example.com" class="tipOpener tipOpener3" data-balloon-type="balloon3" data-balloon-title="Employee list 1" data-balloon-date="2014-04-01" data-balloon-size="3.5MB">Report File 03-01</a></li>
+					<li class="item3"><a href="http://example.com" class="tipOpener tipOpener3" data-balloon-type="balloon3" data-balloon-title="Employee list 2" data-balloon-date="2013-05-02" data-balloon-size="1.6MB">Report File 03-02</a></li>
+					<li class="item3"><a href="http://example.com" class="tipOpener tipOpener3" data-balloon-type="balloon3" data-balloon-title="Employee list 3" data-balloon-date="2014-06-10" data-balloon-size="12.5MB">Report File 03-03</a></li>
+					<li class="item3"><a href="http://example.com" class="tipOpener tipOpener3" data-balloon-type="balloon3" data-balloon-title="Employee list 4" data-balloon-date="2012-07-04" data-balloon-size="2.4MB">Report File 03-04</a></li>
+					<li class="item3"><a href="http://example.com" class="tipOpener tipOpener3" data-balloon-type="balloon3" data-balloon-title="Employee list 5" data-balloon-date="2014-08-04" data-balloon-size="5.5MB">Report File 03-05</a></li>
+				</ul>
+				
+				<ul class="list">
+					<li class="item4"><a href="http://example.com" class="tipOpener tipOpener4" data-balloon-type="balloon4" data-balloon-title="Company list 1" data-balloon-date="2014-04-01" data-balloon-size="3.5MB">Report File 04-01</a></li>
+					<li class="item4"><a href="http://example.com" class="tipOpener tipOpener4" data-balloon-type="balloon4" data-balloon-title="Company list 2" data-balloon-date="2013-05-02" data-balloon-size="1.6MB">Report File 04-02</a></li>
+					<li class="item4"><a href="http://example.com" class="tipOpener tipOpener4" data-balloon-type="balloon4" data-balloon-title="Company list 3" data-balloon-date="2014-06-10" data-balloon-size="12.5MB">Report File 04-03</a></li>
+					<li class="item4"><a href="http://example.com" class="tipOpener tipOpener4" data-balloon-type="balloon4" data-balloon-title="Company list 4" data-balloon-date="2012-07-04" data-balloon-size="2.4MB">Report File 04-04</a></li>
+					<li class="item4"><a href="http://example.com" class="tipOpener tipOpener4" data-balloon-type="balloon4" data-balloon-title="Company list 5" data-balloon-date="2014-08-04" data-balloon-size="5.5MB">Report File 04-05</a></li>
+					<li class="item4"><a href="http://example.com" class="tipOpener tipOpener4" data-balloon-type="balloon4" data-balloon-title="Company list 6" data-balloon-date="2011-09-23" data-balloon-size="120.2MB">Report File 04-06</a></li>
+					<li class="item4"><a href="http://example.com" class="tipOpener tipOpener4" data-balloon-type="balloon4" data-balloon-title="Company list 7" data-balloon-date="1982-10-30" data-balloon-size="100.4MB">Report File 04-07</a></li>
+				</ul>
+				
+			</div>
+		</div>
+		
+		<!-- デモ終了 -->
+	</div></div></div>
+</body>
+</html>

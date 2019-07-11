@@ -1,0 +1,17 @@
+body{
+	font-size:3em;
+}
+.container {
+	height:120px;
+}
+.container div {
+	padding:6px 20px 6px;
+}
+#div1 {
+	background:tomato;
+	display:none;
+}
+#div2 {
+	background:gold;
+	display:block;
+}

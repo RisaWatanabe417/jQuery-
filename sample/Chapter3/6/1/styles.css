@@ -1,0 +1,10 @@
+div {
+	border:1px solid #666;
+	border-radius:6px;
+	padding:8px 15px;
+	margin:6px 0;
+}
+#basket { background:burlywood; }
+#apple { background:tomato; }
+#banana { background:gold; }
+#orange { background:orange; }

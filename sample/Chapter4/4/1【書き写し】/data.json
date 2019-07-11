@@ -1,0 +1,17 @@
+[
+	{
+		"no": "0001",
+		"name": "Taro Yamada",
+		"mail": "example1@example.com"
+	},
+	{
+		"no": "0002",
+		"name": "Hanako Suzuki",
+		"mail": "example2@example.com"
+	},
+	{
+		"no": "0003",
+		"name": "Takeshi Tanaka",
+		"mail": "example3@example.com"
+	}
+]

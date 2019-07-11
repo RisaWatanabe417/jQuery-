@@ -1,0 +1,17 @@
+<people>
+	<person>
+		<no>0001</no>
+		<name>Taro Yamada</name>
+		<mail>example1@example.com</mail>
+	</person>
+	<person>
+		<no>0002</no>
+		<name>Hanako Suzuki</name>
+		<mail>example2@example.com</mail>
+	</person>
+	<person>
+		<no>0003</no>
+		<name>Takeshi Tanaka</name>
+		<mail>example3@example.com</mail>
+	</person>
+</people>

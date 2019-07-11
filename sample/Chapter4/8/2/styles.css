@@ -1,0 +1,37 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	background:#eee;
+}
+.all {
+	padding:10px;
+	overflow:hidden;
+}
+.photos{
+	width:300px;
+	height:203px;
+	position:relative;
+	margin:0 auto;
+}
+.inner{
+	width:1540px;
+	height:203px;
+	position:absolute;
+	left:0;
+	top:0;
+}
+.item{
+	width:300px;
+	margin:0 0 0 10px;
+	float:left;
+	box-shadow:0 2px 3px rgba(0,0,0,.2);
+}
+.firstItem{
+	margin-left:0;
+}
+.item img{
+	border:5px solid #fff;
+	float:left;
+}

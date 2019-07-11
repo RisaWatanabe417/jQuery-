@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Touch demo 01 | jQuery book demos</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- このページで使うCSS -->
+<link rel="stylesheet" type="text/css" href="styles.css" />
+
+<!-- jQuery -->
+<script src="../shared/jquery-1.11.1.min.js"></script>
+<!-- このページで使うJavaScript -->
+<script src="scripts.js"></script>
+
+</head>
+<body>
+
+<div class="headArea">
+
+	<div class="tabContainer" id="tabContainer"><!--
+	--><a href="#tabContent1"><img src="imgs/tab1.png" alt=""></a><!--
+	--><a href="#tabContent2"><img src="imgs/tab2.png" alt=""></a><!--
+	--><a href="#tabContent3"><img src="imgs/tab3.png" alt=""></a><!--
+	--><a href="#tabContent4"><img src="imgs/tab4.png" alt=""></a><!--
+	--></div>
+	
+	<div class="tabIndicator" id="tabIndicator"><div class="inner">
+		<div class="pointer"><img src="imgs/pointer.png" alt=""></div>
+	</div></div>
+	
+<!-- /headArea --></div>
+
+<div class="bodyArea"><div class="bodyAreaInner">
+	
+	<div class="tabContent" id="tabContent1">
+		<h1 class="contentHeading contentHeading-type1">Home</h1>
+		<img class="photoBlock" src="imgs/photo1.jpg" alt="" width="280" height="185">
+		<p>Lorem ipsum dolor sit amet, pro at justo commune copiosae, quas euismod qui an. Et dicta percipitur reformidans usu, dicta fierent no his. Meis inani te cum, ponderum assueverit cu duo. No vocent commune quo, purto justo pericula eu per. Ius putent commodo euripidis in, eligendi appetere ne ius.</p>
+		<p>At ipsum scripta efficiantur nec. Perpetua vituperata quaerendum vix ne, pri ne veri liber apeirian. Vidisse lucilius facilisi ei vix, vim ei quod esse atqui, error placerat molestiae eam cu. Denique albucius quo ad, eos eu malis assum.</p>
+		<p>Lorem ipsum dolor sit amet, pro at justo commune copiosae, quas euismod qui an. Et dicta percipitur reformidans usu, dicta fierent no his. Meis inani te cum, ponderum assueverit cu duo. No vocent commune quo, purto justo pericula eu per. Ius putent commodo euripidis in, eligendi appetere ne ius.</p>
+		<p>At ipsum scripta efficiantur nec. Perpetua vituperata quaerendum vix ne, pri ne veri liber apeirian. Vidisse lucilius facilisi ei vix, vim ei quod esse atqui, error placerat molestiae eam cu. Denique albucius quo ad, eos eu malis assum.</p>
+	<!-- /tabContent --></div>
+	
+	<div class="tabContent" id="tabContent2">
+		<h1 class="contentHeading contentHeading-type2">Store</h1>
+		<div class="photoBlockDouble">
+			<div class="block">
+				<img class="photoBlock" src="imgs/photo2.jpg" alt="" width="130" height="86">
+				<p>Lorem ipsum dolor sit amet, pro at justo commune copiosae.</p>
+			</div>
+			<div class="block">
+				<img class="photoBlock" src="imgs/photo3.jpg" alt="" width="130" height="86">
+				<p>reformidans usu, dicta fierent no his. Meis inani te cum, ponderum.</p>
+			</div>
+		<!-- /photoBlockDouble --></div>
+		<div class="photoBlockDouble">
+			<div class="block">
+				<img class="photoBlock" src="imgs/photo4.jpg" alt="" width="130" height="86">
+				<p>Lorem ipsum dolor sit amet, pro at justo commune copiosae.</p>
+			</div>
+			<div class="block">
+				<img class="photoBlock" src="imgs/photo5.jpg" alt="" width="130" height="86">
+				<p>reformidans usu, dicta fierent no his. Meis inani te cum, ponderum.</p>
+			</div>
+		<!-- /photoBlockDouble --></div>
+		<div class="photoBlockDouble">
+			<div class="block">
+				<img class="photoBlock" src="imgs/photo6.jpg" alt="" width="130" height="86">
+				<p>Lorem ipsum dolor sit amet, pro at justo commune copiosae.</p>
+			</div>
+		<!-- /photoBlockDouble --></div>
+	<!-- /tabContent --></div>
+	
+	<div class="tabContent" id="tabContent3">
+		<h1 class="contentHeading contentHeading-type3">FAQ</h1>
+		<table class="FAQ">
+			<tr>
+				<th><span class="Q">Q</span></th>
+				<td>
+					<p>Lorem ipsum dolor sit amet, pro at justo commune copiosae, quas euismod qui an.</p>
+				</td>
+			</tr>
+			<tr>
+				<th><span class="A">A</span></th>
+				<td>
+					<p>Lorem ipsum dolor sit amet, pro at justo commune copiosae, quas euismod qui an. Et dicta percipitur reformidans usu, dicta fierent no his. Meis inani te cum, ponderum assueverit cu duo. No vocent commune quo, purto justo pericula eu per. Ius putent commodo euripidis in, eligendi appetere ne ius.</p>
+					<p>At ipsum scripta efficiantur nec. Perpetua vituperata quaerendum vix ne, pri ne veri liber apeirian. Vidisse lucilius facilisi ei vix, vim ei quod esse atqui, error placerat molestiae eam cu. Denique albucius quo ad, eos eu malis assum.</p>
+				</td>
+			</tr>
+		</table>
+	<!-- /tabContent --></div>
+	
+	<div class="tabContent" id="tabContent4">
+		<h1 class="contentHeading contentHeading-type4">Settings</h1>
+		<form class="formSet">
+			<div class="item"><label>
+				<span class="title">Id</span>
+				<input type="text">
+			</label></div>
+			<div class="item"><label>
+				<span class="title">Password</span>
+				<input type="password">
+			</label></div>
+			<div class="item"><label>
+				<span class="title">Name</span>
+				<input type="text">
+			</label></div>
+			<div class="item"><label>
+				<span class="title">Email</span>
+				<input type="text">
+			</label></div>
+			<div class="item"><label>
+				<span class="title">Country</span>
+				<input type="text">
+			</label></div>
+		</form>
+	<!-- /tabContent --></div>
+
+<!-- /bodyArea --></div></div>
+
+</body>
+</html>
