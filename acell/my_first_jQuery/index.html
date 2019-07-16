@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<title></title>
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<h1 class="u-mbm big">荒田さんによるjQuery入門</h1>
+<h2 class="u-mbm hyper-big">コメント必ず読めよ！いっぱい書いたから！</h2>
+<div class="wrapper">
+    <div class="u-mbm btn" id="q1">q1の問題</div>
+    <div class="u-mbm btn" id="q2">q2の問題</div>
+    <div class="u-mbm btn" id="q3">q3の問題</div>
+    <div class="u-mbm btn" id="q4">q4の問題</div>
+    <div class="u-mbm btn" id="q5">q5の問題</div>
+    <div class="u-mbm btn" id="q6">q6の問題</div>
+    <ul class="u-mbm lists" id="q7">
+        <li>q7_1</li>
+        <li>q7_2</li>
+        <li>q7_3</li>
+        <li>q7_4</li>
+    </ul>
+    <div class="u-mbm btn" id="q8">q8の問題</div>
+    <div class="u-mbm btn" id="q9" data-text="これはdata属性です">q9の問題</div>
+    <ul class="u-mbm lists" id="q10">
+        <li>q10_1</li>
+        <li>q10_2</li>
+        <li>q10_3</li>
+    </ul>
+    <ul class="u-mbm lists" id="q11">
+        <li>q11_1</li>
+        <li>q11_2</li>
+        <li>q11_3</li>
+    </ul>
+</div>
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+$(function() {
+// 第1問　jQueryでid="q1"の要素の文字色を赤色にせよ。
+    $('#q1').css('color','red');
+// 第2問　id="q2"の要素をクリックしたら背景色をピンクにせよ。
+    const q2 = $('#q2');
+    q2.on('click',function() {
+        q2.css('background','pink');
+    });
+// 第3問　id="q3"の要素をクリックしたら2秒かけてフェードアウトさせよ。
+    const q3 = $('#q3');
+    q3.on('click',function() {
+        q3.fadeOut(2000);
+    });
+// 第4問　id="q4"の要素をクリックしたらこの要素の前後とこの要素内の前後にテキストを挿入せよ。
+    const q4 = $('#q4');
+    q4.on('click',function() {
+        q4.prepend('☆');
+        q4.append('★');
+        q4.before('〇');
+        q4.after('●');
+    });
+// 第5問　id="q5"の要素をクリックしたらこの要素にbigというクラスを付与せよ。
+    const q5 = $('#q5');
+    q5.on('click',function() {
+        q5.addClass('big');
+    });
+// 第6問　id="q6"の要素をクリックしたらこの要素を2秒かけてmargin-topとmargin-leftを100pxの位置に移動させよ。
+    const q6 = $('#q6');
+    q6.on('click',function() {
+        q6.animate({
+            'margin-top': '100px',
+            'margin-left': '100px'
+        },2000);
+    });
+// 第7問　id="q7"の子要素をクリックしたら、その要素のインデックス（何番目か）をconsole.log()とalert()を用いて表示させよ。
+//index=何番目か(0から始まる)、element=jQueryオブジェクト
+    const q7 = $('#q7');
+    q7.children('li').each(function(index,element) {
+        $(element).on('click',function() {
+            console.log(index + 1);
+            alert(index + 1);
+        });
+    });
+// 第8問　id="q8"の要素をhoverしたらbigというクラスを付与し、hoverが外れたら、クラスを削除せよ。
+    const q8 = $('#q8');
+    q8.on('mouseover',function() {
+        q8.addClass('big');
+    });
+    q8.on('mouseout',function() {
+        q8.removeClass('big');
+    });
+// 第9問　id="q9"の要素をクリックしたらこの要素に設定してあるdata属性をconsoleに表示せよ。
+    const q9 = $('#q9');
+    q9.on('click',function() {
+        console.log(q9.attr('data-text'));
+    });
+// 第10問　id="q10"の子要素をクリックしたら、その要素のインデックスと等しいid="q11"の子要素にbigというクラスを追加せよ。
+    const q10 = $('#q10');
+    const q11 = $('#q11');
+    q10.children('li').each(function(index,element) {
+        $(element).on('click',function() {
+            q11.children('li').eq(index).addClass('big');
+        });
+    });
+});
+</script>
+</body>
+</html>
