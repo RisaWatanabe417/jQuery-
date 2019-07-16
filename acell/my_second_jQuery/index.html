@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<title></title>
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<h1 class="u-mbm big">荒田さんによるjQuery入門2(というよりjavascript基本文法)</h1>
+<h2 class="u-mbm hyper-big">コメント必ず読めよ！いっぱい書いたから！</h2>
+<div class="wrapper">
+    <div class="u-mbm btn" id="q1">q1の問題</div>
+    <div class="u-mbm btn" id="q2">q2の問題</div>
+    <div class="u-mbm btn" id="q3">q3の問題</div>
+    <div class="u-mbm btn" id="q4">q4の問題</div>
+    <div class="u-mbm btn" id="q5">q5の問題</div>
+    <div class="u-mbm btn" id="q6">q6の問題</div>
+    <div class="u-mbm btn" id="q7">q7の問題</div>
+    <div class="u-mbm btn" id="q8">q8の問題</div>
+</div>
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+// 第1問　id="q1"の要素をクリックしたらmyAgeという変数に自分の年齢を書き、その値が20以上の場合、「あなたは成人です。」、20未満の場合、「あなたは未成年です。」という文言でアラートを出力せよ。
+    const q1 = $('#q1');
+    const myAge = 28;
+    q1.on('click',function() {
+        if(myAge >= 20) {
+            alert('あなたは成人です。');
+        } else {
+            alert('あなたは未成年です。');
+        }
+    });
+// 第2問　id="q2"の要素をクリックしたらfor文を用いて、0123456789という文字列を作り、#q2の後にその文字列を挿入せよ。
+    const q2 = $('#q2');
+    q2.on('click',function() {
+        let str = '';
+        for(let i = 0; i <= 9; i++) {
+            str += i;
+        }
+        q2.append(str);
+    });
+//?? 第3問　id="q3"の要素をクリックしたらfor文、if文を用いて、024689という文字列を作り、#q3の後にその文字列を挿入せよ。
+    const q3 = $('#q3'); // jQueryオブジェクト化する
+    q3.click(function() { // clickしたら～するよ
+        let text = ''; // textの入る箱を作る
+        for(let i =0; i < 10; i++) { //iは0かつ9まで1つずつ増えるよ
+            if(i % 2 === 0 || i === 9) { // 2で割り切れる(偶数)または9の場合
+                text += i; // +=はもともとの値に足していく
+            }
+        }
+        q3.after(text); // afterでjQueryオブジェクトに対してtextを追加する
+    });
+// 第4問　id="q4"の要素をクリックしたらfor文を用いて、[-10,-9,-8,-7,-6,-5,-4,-3,-2,-1]という配列をconsoleに出力せよ。
+    const q4 = $('#q4');
+    const array = [];
+    q4.on('click',function() {
+        for(i = -10; i <= -1; i++) {
+            array.push(i);
+        }
+        console.log(array);
+    })
+// 第5問　id="q5"の要素をクリックしたらmyAgeという変数に自分の名前は書き、consoleで「HELLO, {自分の名前}! GOOD MORNING!」という文字列を出力せよ。
+    const q5 = $('#q5');
+    const myName = '渡邉';
+    q5.on('click',function() {
+        console.log('HELLO,' + myName + '! GOOD MORNING!');
+    })
+// 第6問　id="q6"の要素をクリックしたらclassNameという変数にbigという文字列を挿入し、その変数を用いて、<div class='big u-mbm btn'>追加された要素</div>という文字列を作り、#q6の後にその文字列を挿入せよ。
+    const q6 = $('#q6');
+    const className = 'big';
+    q6.on('click',function() {
+        q6.append("<div class='big u-mbm btn'>追加された要素</div>");
+    });
+// 第7問　id="q7"の要素をクリックしたら今開いているファイル（index.html）のURLと日付をconsoleに出力せよ。
+    const q7 = $('#q7');
+    const today = new Date();
+    q7.on('click',function() {
+        console.log(location.href);
+        console.log(today.getFullYear() + '/' + (today.getMonth() + 1) + '/' + today.getDate());
+    });
+// 第8問　id="q8"の要素をクリックしたら2秒後にアラートに自分の名前を出力せよ。
+    const q8 = $('#q8');
+    q8.on('click',function() {
+        setTimeout(function() {
+            alert('渡邉')
+        },2000);
+    });
+</script>
+</body>
+</html>
