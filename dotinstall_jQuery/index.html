@@ -5,16 +5,87 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>jQueryの練習</title>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 </head>
 <body>
   <p>jQueryの練習</p>
-  <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+  <ul id="main">
+    <li>0</li>
+    <li class="item">1</li>
+    <li class="item">2</li>
+    <li>3
+      <ul id="sub">
+        <li>3-0</li>
+        <li>3-1</li>
+        <li class="item">3-2</li>
+        <li class="item">3-3</li>
+        <li>3-4</li>
+      </ul>
+    </li>
+  </ul>
   <script>
-    //$(document).ready(function() {
-      $(function() {
-        $('p').css('color', 'red')
-      });
+    // #05
+    $(function() {
+      // セレクタ.メソッド
+      // フィルタ
+      // :eq()イコール
+      // :gt()～より大きい, :lt()～より小さい
+      // :even偶数, :odd奇数
+      // :contains()指定した文字を探して、該当するものに色を付ける
+      // :first最初の, :last最後の
+      // $('#sub > li:eq(2)').css('color', 'red');
+      // $('#sub > li:gt(1)').css('color', 'red');
+      // $('#sub > li:odd()').css('color', 'red');
+      $('#sub > li:contains("4")').css('color', 'red');
+    });
+
+    // #04
+    // $(function() {
+    //   // セレクタ.メソッド
+    //   // # .
+    //   // > 直下の子要素
+    //   //   それ以下の要素
+    //   // , 複数の要素
+    //   // + 隣接する要素
+
+    //   // mainの直下のitemのみ赤にする
+    //   // $('#main > .item').css('color', 'red');
+      
+    //   // mainとそれ以下のitemを赤にする
+    //   // $('#main .item').css('color', 'red');
+      
+    //   // pとitemの2つの要素を赤にする
+    //   // $('p, .item').css('coloer', 'red');
+      
+    //   // itemに隣接するitemを赤にする
+    //   // $('.item + .item').css('color', 'red');
+    //   const item = $('.item');
+    //   const main = $('#main');
+    //   item.css('color', 'red');
     // });
+
+    // #03
+    // $(function() {
+    //   // セレクタ.メソッド
+    //   // $('')
+    //   // html要素 p h1 ul
+    //   // id #main
+    //   // class .item
+    //   // const sub = $('#sub');
+    //   // sub.css('color', 'red');
+    //   const item = $('.item');
+    //   item.css('color', 'red');
+    // });
+
+    // #02
+    // //$(document).ready(function() {
+    //   $(function() {
+    //     // セレクタ：処理対象となるDOM要素を指定する記法
+    //     // メソッド：処理(.css('color', 'red')がメソッド)
+    //     // メソッドを繋げて書くことをメソッドチェーンという
+    //     $('p').css('color', 'red').hide('slow');
+    //   });
+    // // });
   </script>
 </body>
 </html>
