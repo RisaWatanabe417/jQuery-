@@ -24,6 +24,27 @@
     </li>
   </ul>
   <script>
+    // #06？？
+    $(function() {
+      // セレクタ.メソッド
+      // メソッドを使ったDOM要素の指定
+      // parent() - 親要素, children() - 子要素
+      // next(), prev()
+      // siblings() - 兄弟要素
+
+      // #subの親要素・子要素にCSSを当てる？？
+      // 親要素とは？子要素とは？
+      // $('#sub').parent().css('color', 'red');
+      // $('#sub').children().css('color', 'red');
+
+      // eq(2)の次の要素3-3だけがCSSが当たるはずが、3-3,3-4ともに赤くなるのはなぜ？？
+      // $('#sub > li:eq(2)').next().css('color', 'red');
+      // $('#sub > li:eq(2)').prev().css('color', 'red');
+
+      // 該当の要素以外の兄弟要素って意味？？
+      $('#sub > li:eq(2)').siblings().css('color', 'red');
+    });
+
     // #05
     $(function() {
       // セレクタ.メソッド
