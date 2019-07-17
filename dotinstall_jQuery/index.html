@@ -9,7 +9,13 @@
 </head>
 <body>
   <p>jQueryの練習</p>
-  <ul id="main">
+  <!-- #07から -->
+  <p><a href="http://google.com">Google</a></p>
+  <p><a href="http://yahoo.co.jp">Yahoo!</a></p>
+  <p><a href="http://dotinstall.com">Dotinstall</a></p>
+
+  <!-- #06まで -->
+  <!-- <ul id="main">
     <li>0</li>
     <li class="item">1</li>
     <li class="item">2</li>
@@ -22,8 +28,24 @@
         <li>3-4</li>
       </ul>
     </li>
-  </ul>
+  </ul> -->
   <script>
+    // #07？？
+    $(function() {
+      // セレクタ.メソッド
+      // 属性セレクタ
+      // = ～と等しい
+      // != ～と等しくない
+      // *= ～を含む
+      // ^= ～で始まる
+      // $= ～で終わる
+      // $('a[href="http://google.com"]').css('background', 'red');
+      // $('a[href!="http://google.com"]').css('background', 'red');
+      // $('a[href*="dotinstall"]').css('background', 'red');
+      // $('a[href$="jp"]').css('background', 'red');
+      $('a[href^="Y"]').css('background', 'red');
+    });
+
     // #06？？
     $(function() {
       // セレクタ.メソッド
