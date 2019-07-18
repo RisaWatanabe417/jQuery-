@@ -7,21 +7,24 @@
   <title>jQueryの練習</title>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <style>
-    .myStyle {
+    /* .myStyle {
       border: 5px solid green;
       font-size: 45px;
-    }
+    } */
   </style>
 </head>
 <body>
   <p>jQueryの練習</p>
+  <!-- #09から -->
+  <a href="http://google.com" data-sitename="google">Google</a>
+
   <!-- #07から -->
-  <p><a href="http://google.com">Google</a></p>
+  <!-- <p><a href="http://google.com">Google</a></p>
   <p><a href="http://yahoo.co.jp">Yahoo!</a></p>
-  <p><a href="http://dotinstall.com">Dotinstall</a></p>
+  <p><a href="http://dotinstall.com">Dotinstall</a></p> -->
 
   <!-- #06まで -->
-  <ul id="main">
+  <!-- <ul id="main">
     <li>0</li>
     <li class="item">1</li>
     <li class="item">2</li>
@@ -34,8 +37,18 @@
         <li>3-4</li>
       </ul>
     </li>
-  </ul>
+  </ul> -->
   <script>
+    // #09
+    $(function() {
+      // attr
+      // console.log($('a').attr('href'));
+      // $('a').attr('href', 'http://google.co.jp');
+
+      // data
+      console.log($('a').data('sitename'));
+    });
+
     // #08
     $(function() {
       // セレクタ.メソッド
@@ -47,7 +60,7 @@
       // $('p').addClass('myStyle');
     });
 
-    // #07？？
+    // #07
     $(function() {
       // セレクタ.メソッド
       // 属性セレクタ
