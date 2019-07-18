@@ -15,16 +15,19 @@
 </head>
 <body>
   <p>jQueryの練習</p>
+  <!-- #12から -->
+  <div id="box" style="width: 100px;height: 100px;background: red;"></div>
+
   <!-- #11から -->
-  <ul>
+  <!-- <ul>
     <li>0</li>
     <li>1</li>
     <li>2</li>
-  </ul>
+  </ul> -->
 
   <!-- #09から -->
-  <a href="http://google.com" data-sitename="google">Google</a>
-  <input type="text" value="hello">
+  <!-- <a href="http://google.com" data-sitename="google">Google</a>
+  <input type="text" value="hello"> -->
   <!-- #07から -->
   <!-- <p><a href="http://google.com">Google</a></p>
   <p><a href="http://yahoo.co.jp">Yahoo!</a></p>
@@ -46,6 +49,28 @@
     </li>
   </ul> -->
   <script>
+    // #12
+    $(function() {
+      // hide, show
+      // fadeOut, fadeIn
+      // toggle // 今表示されていたら消す,非表示なら表示する
+      
+      // $('#box').hide(); // 単純に消える
+      // $('#box').hide('slow'); // 少しゆっくり消える
+      // $('#box').hide(800); // 0.8秒かけて消える
+
+      // $('#box').fadeOut(1000);
+
+      // $('#box').toggle(1000);
+      // $('#box').toggle(1000);
+      // $('#box').toggle(1000);
+
+      $('#box').toggle(1000, function() {
+        alert('gone!');
+      });
+
+    });
+
     // #11
     $(function() {
       // before, after -> inserBefore, insertAfter どちらも同じことができる
@@ -58,8 +83,8 @@
       // $('ul').prepend(li); // 先頭に追加
       // $('ul').append(li); // 末尾に追加
 
-      li.prependTo($('ul'));
-      // li.appendTo($('ul'));
+      // li.prependTo($('ul')); // 書き方は違うが先端に追加
+      // li.appendTo($('ul')); // 同じく末尾に追加
     });
   
     // #10
