@@ -17,7 +17,7 @@
   <p>jQueryの練習</p>
   <!-- #09から -->
   <a href="http://google.com" data-sitename="google">Google</a>
-
+  <input type="text" value="hello">
   <!-- #07から -->
   <!-- <p><a href="http://google.com">Google</a></p>
   <p><a href="http://yahoo.co.jp">Yahoo!</a></p>
@@ -39,6 +39,20 @@
     </li>
   </ul> -->
   <script>
+    // #10
+    $(function() {
+      // text - textの中身を変更
+      // html - html自体を変更
+      // val - バリューの略/値を取得する
+      // remove - p要素自体を消す, empty - 中身をなくす
+      // $('p').text('just changed');
+      // $('p').html('<a href="#">click me!</a>');
+      // console.log($('input').val());
+      // $('input').val('hello, again!');
+      // $('p').empty();
+      // $('p').remove();
+    });
+
     // #09
     $(function() {
       // attr
@@ -46,7 +60,7 @@
       // $('a').attr('href', 'http://google.co.jp');
 
       // data
-      console.log($('a').data('sitename'));
+      // console.log($('a').data('sitename'));
     });
 
     // #08
@@ -73,7 +87,7 @@
       // $('a[href!="http://google.com"]').css('background', 'red');
       // $('a[href*="dotinstall"]').css('background', 'red');
       // $('a[href$="jp"]').css('background', 'red');
-      $('a[href^="http://g"]').css('background', 'red');
+      // $('a[href^="http://g"]').css('background', 'red');
     });
 
     // #06
