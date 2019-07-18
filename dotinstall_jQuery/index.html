@@ -6,6 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>jQueryの練習</title>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <style>
+    .myStyle {
+      border: 5px solid green;
+      font-size: 45px;
+    }
+  </style>
 </head>
 <body>
   <p>jQueryの練習</p>
@@ -15,7 +21,7 @@
   <p><a href="http://dotinstall.com">Dotinstall</a></p>
 
   <!-- #06まで -->
-  <!-- <ul id="main">
+  <ul id="main">
     <li>0</li>
     <li class="item">1</li>
     <li class="item">2</li>
@@ -28,8 +34,19 @@
         <li>3-4</li>
       </ul>
     </li>
-  </ul> -->
+  </ul>
   <script>
+    // #08
+    $(function() {
+      // セレクタ.メソッド
+      // .css 設定 取得
+      // $('p').css('color', 'red').css('background', 'pink');
+      // console.log($('p').css('color'));
+
+      //addClass - クラスの追加, removeClass - クラスの削除
+      // $('p').addClass('myStyle');
+    });
+
     // #07？？
     $(function() {
       // セレクタ.メソッド
@@ -43,10 +60,10 @@
       // $('a[href!="http://google.com"]').css('background', 'red');
       // $('a[href*="dotinstall"]').css('background', 'red');
       // $('a[href$="jp"]').css('background', 'red');
-      $('a[href^="Y"]').css('background', 'red');
+      $('a[href^="http://g"]').css('background', 'red');
     });
 
-    // #06？？
+    // #06
     $(function() {
       // セレクタ.メソッド
       // メソッドを使ったDOM要素の指定
@@ -54,17 +71,16 @@
       // next(), prev()
       // siblings() - 兄弟要素
 
-      // #subの親要素・子要素にCSSを当てる？？
-      // 親要素とは？子要素とは？
+      // #subの親要素・子要素にCSSを当てる
       // $('#sub').parent().css('color', 'red');
-      // $('#sub').children().css('color', 'red');
+      $('#sub').children().css('color', 'red');
 
       // eq(2)の次の要素3-3だけがCSSが当たるはずが、3-3,3-4ともに赤くなるのはなぜ？？
       // $('#sub > li:eq(2)').next().css('color', 'red');
       // $('#sub > li:eq(2)').prev().css('color', 'red');
 
       // 該当の要素以外の兄弟要素って意味？？
-      $('#sub > li:eq(2)').siblings().css('color', 'red');
+      // $('#sub > li:eq(2)').siblings().css('color', 'red');
     });
 
     // #05
@@ -79,7 +95,7 @@
       // $('#sub > li:eq(2)').css('color', 'red');
       // $('#sub > li:gt(1)').css('color', 'red');
       // $('#sub > li:odd()').css('color', 'red');
-      $('#sub > li:contains("4")').css('color', 'red');
+      // $('#sub > li:contains("4")').css('color', 'red');
     });
 
     // #04
