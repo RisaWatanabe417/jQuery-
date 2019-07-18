@@ -15,6 +15,13 @@
 </head>
 <body>
   <p>jQueryの練習</p>
+  <!-- #11から -->
+  <ul>
+    <li>0</li>
+    <li>1</li>
+    <li>2</li>
+  </ul>
+
   <!-- #09から -->
   <a href="http://google.com" data-sitename="google">Google</a>
   <input type="text" value="hello">
@@ -39,6 +46,22 @@
     </li>
   </ul> -->
   <script>
+    // #11
+    $(function() {
+      // before, after -> inserBefore, insertAfter どちらも同じことができる
+      // prepend - ある要素の先頭に追加する, append - ある要素の末尾に追加する
+
+      const li = $('<li>').text('just added');
+      // $('ul > li:eq(1)').before(li);
+      // li.insertBefore($('ul > li:eq(1)'));
+
+      // $('ul').prepend(li); // 先頭に追加
+      // $('ul').append(li); // 末尾に追加
+
+      li.prependTo($('ul'));
+      // li.appendTo($('ul'));
+    });
+  
     // #10
     $(function() {
       // text - textの中身を変更
