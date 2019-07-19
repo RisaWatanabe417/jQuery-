@@ -15,8 +15,12 @@
 </head>
 <body>
   <p>jQueryの練習</p>
+  <!-- #17から -->
+  <button>もっと読む</button>
+  <div id="result"></div>
+
   <!-- #15から -->
-  <button>Add!</button>
+  <!-- <button>Add!</button> -->
 
   <!-- #14から -->
   <!-- <input type="text" id="name">
@@ -60,16 +64,29 @@
     </li>
   </ul> -->
   <script>
-    // #15
+    // #17
     $(function() {
       $('button').click(function() {
-        const p = $('<p>').text('vanish!').addClass('vanish');
-        $(this).before(p);
+        $('#result').load('more.html');
       });
+    });
 
-      $('body').on('click', '.vanish', function() {
-        $(this).remove();
-      });
+    // #16
+    // Ajax
+    // Asynchronous JavaScript + XML
+    // サーバーと通信 + ページの書き換え
+    // ローカル開発環境の作成
+
+    // #15
+    $(function() {
+      // $('button').click(function() {
+      //   const p = $('<p>').text('vanish!').addClass('vanish');
+      //   $(this).before(p);
+      // });
+
+      // $('body').on('click', '.vanish', function() {
+      //   $(this).remove();
+      // });
     });
 
     // #14
