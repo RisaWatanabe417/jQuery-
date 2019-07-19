@@ -75,12 +75,13 @@
     $(function() {
       // $.post - データを更新する
       // $.get - 単にデータを取得する
-
+      
+      // PHPの作成を行ていないため、動かない
       $('#greet').click(function() {
         $.get('greet.php', {
-          name: $('#name').val();
+          name: $('#name').val()
         }, function(data) {
-          $('#result').html(data);
+          $('#result').html(data.message + '(' + data.length + ')');
         });
       });
     });
@@ -96,8 +97,8 @@
         // more.htmlの読み込み後に2行目が実行される
         // $('#result').load('more.html', function() {
         //   $('#messege').css('color', 'red');
-        });
-      });
+        // });
+      // });
     });
 
     // #17
