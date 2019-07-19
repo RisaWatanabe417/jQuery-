@@ -15,9 +15,16 @@
 </head>
 <body>
   <p>jQueryの練習</p>
-  <!-- #17から -->
-  <button>もっと読む</button>
+  <!-- #19から -->
+  <p>
+    <input type="text" name="name" id="name">
+    <input type="button" id="greet" value="Greet!">
+  </p>
   <div id="result"></div>
+
+  <!-- #17から -->
+  <!-- <button>もっと読む</button>
+  <div id="result"></div> -->
 
   <!-- #15から -->
   <!-- <button>Add!</button> -->
@@ -64,16 +71,31 @@
     </li>
   </ul> -->
   <script>
+    // #19・20
+    $(function() {
+      // $.post - データを更新する
+      // $.get - 単にデータを取得する
+
+      $('#greet').click(function() {
+        $.get('greet.php', {
+          name: $('#name').val();
+        }, function(data) {
+          $('#result').html(data);
+        });
+      });
+    });
+
     // #18
     $(function() {
-      $('button').click(function() {
+      // $('button').click(function() {
         // more.htmlの読み込みが終わる前に2行目の実行が行われてしまう
         // $('#result').load('more.html');
         // $('#messege').css('color', 'red');
 
+        // .load() - サーバー側の情報を読み込む
         // more.htmlの読み込み後に2行目が実行される
-        $('#result').load('more.html', function() {
-          $('#messege').css('color', 'red');
+        // $('#result').load('more.html', function() {
+        //   $('#messege').css('color', 'red');
         });
       });
     });
