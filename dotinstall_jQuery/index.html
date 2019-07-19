@@ -64,16 +64,32 @@
     </li>
   </ul> -->
   <script>
-    // #17
+    // #18
     $(function() {
       $('button').click(function() {
-        $('#result').load('more.html');
+        // more.htmlの読み込みが終わる前に2行目の実行が行われてしまう
+        // $('#result').load('more.html');
+        // $('#messege').css('color', 'red');
+
+        // more.htmlの読み込み後に2行目が実行される
+        $('#result').load('more.html', function() {
+          $('#messege').css('color', 'red');
+        });
       });
+    });
+
+    // #17
+    $(function() {
+      // ローカル環境を作ってないからエラーになる
+      // $('button').click(function() {
+      //   $('#result').load('more.html');
+      // });
     });
 
     // #16
     // Ajax
     // Asynchronous JavaScript + XML
+    // 非同期(Asynchronous)：処理が終わる前に次の処理に移る
     // サーバーと通信 + ページの書き換え
     // ローカル開発環境の作成
 
